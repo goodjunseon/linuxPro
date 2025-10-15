@@ -1,0 +1,12 @@
+SRCS = $(wildcard *.c)
+OBJECTS = $(SRCS:.C=.o)
+CFLAGS = -Wall -Wextra
+TARGET = diary
+
+all: $(TARGET)
+
+$(TARGET): $(OBJECTS)
+	$(CC) -o $@ $^
+
+clean:
+	$(RM) *.o $(TARGET)

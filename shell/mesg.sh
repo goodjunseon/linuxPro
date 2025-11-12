@@ -1,0 +1,1 @@
+MESG="HELLO $USER!"
